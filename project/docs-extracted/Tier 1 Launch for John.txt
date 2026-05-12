@@ -1,0 +1,65 @@
+Tier 1 Launch
+
+1. The Strategic Product Menu & Pricing
+
+Please review the finalized "Fortress Pricing Menu" we just built. Please  set up the backend of your website (Kajabi or similar) and the checkout pages.
+
+The Deliverable: A list of the 10 products, their "Flash Sale" prices ($27), and their "Standard" prices ($79–$249).
+
+2. The "Canva Master" Task
+
+Please take our raw files (the ones I and Bradley actually use) and "template-ize" them.
+
+The Instruction: "Take our current listing decks, checklists, and forms and convert them into high-end Canva Templates. Ensure all colors, fonts, and logos are set as 'Placeholders' so a student can click 'Apply Brand Kit' and have them ready in seconds."
+
+The Goal: Every download must have a "Share Link" from Canva that creates a copy for the student.
+
+3. The "15-Minute Fix" Recording Schedule
+
+Since we are meeting for 4 days, help us and act as the Producer. This structure would keep me and Bradley on track:
+
+The Scripting Prompt: Please prepare a "Shot List" for each of the 10 videos.
+
+The 3-Part Video Formula:
+
+The Hook (2 mins): The specific pain this tool solves.
+
+The Mastery Walkthrough (8 mins): Screen-share the Canva doc while me and Bradley explain the "why" behind each page.
+
+The Bridge (5 mins): The "Golden Ticket" offer that points them toward Tier 2 (The Academy).
+
+4. The Tech Stack Integration
+
+Please handle the "plumbing." Share these requirements:
+
+The Tripwire Setup: Pleasse build a "Pop-up" or a "Checkout Bump" for the $27 AI Library. When someone adds a $249 item to their cart, the $27 item should appear as a "One-Time Offer."
+
+The Lead Magnet: Please set up the "All About You" form as a free download to capture email addresses.
+
+The Email Sequence: Please write a 3-email "Onboarding Series" for every Tier 1 buyer.
+
+Email 1: Your download link + "Welcome to the Academy."
+
+Email 2: A tip on how to use the tool.
+
+Email 3: The invitation to join Tier 2.
+
+5. The "Lender Scholarship" Portal
+
+The Lender Partner Brief is in the google drive.
+
+The Task: "Create a specific hidden page on our site for Lenders. It should have a video of me and Bradley explaining the scholarship and a 'Bulk Purchase' button where they can buy 3 or 5 'Seats' at once for their favorite agents."
+
+The "Presidential" Email Template to your Manager:
+
+We have finalized the Tier 1 strategy for Real Estate Mastery Academy. We are recording these 10 kits during our May/June session. Once they are done, I need you to:
+
+Convert our raw files into Canva Templates.
+
+Build the Kajabi Storefront based on the attached pricing menu.
+
+Set up the $27 Tripwire for the AI Library.
+
+Prepare the 'Shot List' for our 15-minute training videos.
+
+Let's meet to walk through the 'Proof of Action' workflow for Tier 2 so we can bridge these downloads to our monthly membership."*

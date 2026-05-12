@@ -1,0 +1,63 @@
+Tier 2: The Academy – Operational Launch Checklist for John
+
+Project: Tier 2 Academy Setup (8-Month Track)
+
+1. The "Open Door" LMS Architecture
+
+[ ] Progress-Locked Modules: Set the site so that Month 2 opens only after the Month 1 "Homework" or "Action Item" is uploaded.
+
+[ ] The "One-Click" Upload: Create a very simple button at the end of every lesson.
+
+Label: "Share your work with Marjorie & Bradley here."
+
+Instruction: Keep it simple. They can upload a link to their Canva design or just snap a photo of their handwritten schedule/P&L and upload it.
+
+[ ] Canva Integration: Ensure every lesson has the direct link to the template. The student should be able to click, brand it, and be done in minutes.
+
+[ ] The Referral Hub: Set up a dedicated "Referral Exchange" board in the community. Frame it as: "The only agents we trust more than ourselves are the ones doing this work with us."
+
+2. The "Caring Check-In" Automations
+
+[ ] Day 20 "Where are you?" Trigger: Set an automation for the 20th of the month if the work hasn't been shared yet.
+
+[ ] Revised Email Template – The "In the Boat" Voice:
+
+Subject: Thinking of you / Checking in
+
+Body: "Hey! We were just looking through the recent uploads and realized we haven’t seen your work for this month yet. We know exactly how busy this market is—we’re out on appointments today, too—but don't let the 'busy-ness' stop you from building the business you actually deserve. How can we help you get this month’s pieces finished so you can move forward? We’re in this with you! – M&B"
+
+3. The "Lender Hero" Reporting
+
+[ ] Lender Tags: Tag every student with their sponsoring Lender.
+
+[ ] The "Results" Report: Create a monthly update for Lenders showing which agents are moving forward.
+
+[ ] The Blunt Transparency Policy: If an agent misses two months of work, John sends this to the Lender:
+
+"Marjorie and Bradley want to make sure your scholarship is actually growing a business. [Agent Name] hasn't shared their work in 60 days. Since we don't want to take your money if the work isn't happening, would you like to move this spot to a different agent who is ready to go?"
+
+4. Monthly "Proof of Action" (Homework) Schedule
+
+John, set up the upload portals for these 8 specific milestones:
+
+[ ] Month 1: Your Time-Blocked Calendar.
+
+[ ] Month 2: Your "A-List" Database Screenshot.
+
+[ ] Month 3: Your Lead Gen Conversation Tracker.
+
+[ ] Month 4: Your Branded Pre-Listing Packet.
+
+[ ] Month 5: Your Branded Buyer Presentation.
+
+[ ] Month 6: Your "All About You" Forms (Proof of sending).
+
+[ ] Month 7: Your Completed RMA P&L.
+
+[ ] Month 8: Your Graduation Pipeline Audit.
+
+5. Management Workflow
+
+[ ] The "Green Light": John checks the uploads daily. If a file is there, he "unlocks" the next month. OR WE HAVE SOME WAY OF DOING THIS. I am guessing there is a way to do this automatically. 
+
+[ ] Flagging Wins: John flags the most impressive or "heartfelt" uploads for Marjorie and Bradley to give a "shout out" to in the community once a week.

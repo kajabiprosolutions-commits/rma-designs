@@ -1,0 +1,97 @@
+
+/* ============ VARIANT STRIP ============ */
+.variant-strip {
+  background: var(--bone);
+  border-bottom: 1px solid var(--hairline-light);
+  position: sticky; top: 72px; z-index: 40;
+}
+.variant-strip-dark { background: var(--slate); border-bottom-color: var(--hairline-dark); }
+.variant-strip-inner {
+  display: flex; align-items: center; gap: 32px;
+  padding-top: 14px; padding-bottom: 14px;
+}
+.variant-strip-label {
+  color: var(--ink-muted); white-space: nowrap;
+}
+.variant-strip-dark .variant-strip-label { color: var(--bone-muted); }
+.variant-strip-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.variant-tab {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid var(--hairline-light);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: all .15s;
+}
+.variant-strip-dark .variant-tab { border-color: var(--hairline-dark); color: var(--bone-muted); }
+.variant-tab:hover { border-color: var(--brand-teal); color: var(--ink); }
+.variant-strip-dark .variant-tab:hover { color: var(--bone); }
+.variant-tab.active {
+  background: var(--ink); border-color: var(--ink); color: var(--bone);
+}
+.variant-strip-dark .variant-tab.active { background: var(--brand-teal); border-color: var(--brand-teal); color: var(--ink); }
+.variant-tab-key { color: var(--brand-teal); font-weight: 600; }
+.variant-tab.active .variant-tab-key { color: var(--bone); }
+.variant-strip-dark .variant-tab.active .variant-tab-key { color: var(--ink); }
+
+/* ============ LOCK MODAL ============ */
+.lock-modal-overlay {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(7, 12, 19, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px;
+  animation: fadeIn .2s ease;
+}
+.lock-modal {
+  background: var(--ink);
+  border: 1px solid var(--hairline-dark);
+  max-width: 540px; width: 100%;
+  padding: 48px;
+  position: relative;
+  animation: lockModalIn .25s ease;
+}
+.lock-modal-close {
+  position: absolute; top: 16px; right: 16px;
+  background: transparent; border: 1px solid var(--hairline-dark);
+  width: 36px; height: 36px;
+  color: var(--bone-muted); font-size: 22px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.lock-modal-close:hover { color: var(--bone); border-color: var(--brand-teal); }
+.lock-modal-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes lockModalIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ============ FORM FIELD ============ */
+.form-field { display: flex; flex-direction: column; gap: 8px; }
+.form-field textarea.input { resize: vertical; min-height: 100px; font-family: var(--font-body); }
+.form-field select.input { cursor: pointer; }
+
+/* ============ PRICE CARD ============ */
+.price-card {
+  padding: 40px 32px;
+  background: var(--warm-white);
+  border: 1px solid var(--hairline-light);
+  display: flex; flex-direction: column;
+  position: relative;
+}
+.price-card.dark { background: var(--ink); border-color: var(--hairline-dark); }
+.price-card.featured {
+  background: var(--ink); border-color: var(--brand-teal); color: var(--bone);
+  transform: scale(1.02);
+}
+.price-card.featured::before {
+  content: 'MOST CHOSEN'; position: absolute; top: -12px; left: 24px;
+  background: var(--brand-grad); color: var(--ink);
+  padding: 4px 12px; font-family: var(--font-mono); font-size: 10px;
+  letter-spacing: 0.16em; font-weight: 700;
+}
+.price-card.featured .price-card-list span:last-child { color: var(--bone) !important; }
+.price-card-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.price-card-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; }

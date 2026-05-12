@@ -1,0 +1,47 @@
+Please include the following landing pages in the build. These pages should have no header/footer navigation to ensure a 100% focus on the call to action (CTA).
+
+1. The Lead Generation (Top of Funnel)
+
+Tier 1 "The Vault" Opt-In Page: * Goal: Capture emails in exchange for a "Free Script of the Week" or "Market Update."
+
+CTA: Email Opt-in.
+
+Logic: Leads to a "Thank You" page with a "Tripwire" offer to buy a full script pack.
+
+2. The Sales Funnels (The Tiers)
+
+Tier 2 "Mastery Course" Sales Page: * Goal: Sell the 8-month foundational course.
+
+Style: Long-form sales page with social proof, curriculum breakdown, and "Buy Now" buttons.
+
+Tier 3 "Growth & Systems" Sales Page: * Goal: Sell the mid-tier membership focused on scaling.
+
+Style: Focused on ROI, time-back for the agent, and library access.
+
+Tier 4 "The Boardroom" Application Page (VIP): * Goal: Vetting for the high-ticket/exclusive tier.
+
+Style: No "Buy" button. This is a high-end video from Marjorie/Bradley followed by a detailed Application Form. We want this to feel like an "invitation only" elite club.
+
+3. The "Tripwire" Pages (Micro-Transactions)
+
+Individual Script Sales Pages (Templates): * Goal: Sell a single specific tool or script (e.g., "The FSBO Killer Script").
+
+Logic: When a Tier 1 or Guest user clicks a "Locked" item in the Search Portal, they land here.
+
+CTA: One-time purchase ($27–$47).
+
+4. Post-Purchase / Success Pages
+
+The "Onboarding" Thank You Pages: * We need 3 distinct versions (Tier 2, Tier 3, Tier 4).
+
+Goal: Immediate gratification. Video from Marjorie/Bradley saying "You're in," followed by a "Click here to access the Library" button and a "Join the Community" button.
+
+Strategic Directives for Landing Pages:
+
+"Painless" Mobile Checkout: Since our Realtors are on the go, the checkout experience on these landing pages must be "Amazon-simple" (Apple Pay/Google Pay enabled via Stripe).
+
+Scarcity & Urgency: For Tier 2 and 3, please include countdown timers or "Limited Enrollment" callouts where appropriate to drive action.
+
+The "Application" Pivot: For Tier 4, ensure the "Submit" button triggers a notification to Marjorie/Bradley immediately so we can follow up while the lead is hot.
+
+Aesthetic Continuity: These pages must match the $140M-producer "Elite" look and feel of the main site, but with zero distractions (no links to 'About' or 'Blog').

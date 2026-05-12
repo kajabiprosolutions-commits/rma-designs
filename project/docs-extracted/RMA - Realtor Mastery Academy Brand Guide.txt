@@ -1,0 +1,29 @@
+RMA - Realtor Mastery Academy Brand Guide
+
+Taglines: Real Systems. Real Production. Real Life. | By Producers, For Producers.
+
+Colors:
+
+Black #0c0c0c | Charcoal #212121 | Blue #00447c | Teal #0b7b9e | Dark Teal #035b7a | Stone
+
+#dcdace | Gray #eaeaea
+
+Typography:
+
+Headlines: Montserrat (ExtraBold/Bold) | Body: Inter (Regular/Medium)
+
+Logo Usage:
+
+Primary horizontal, stacked, icon (R + arrow). No distortion or glow.
+
+Design Style:
+
+Minimal, high-end, dark UI. 80% dark, 10% neutral, 10% accent.
+
+CTA Language:
+
+Join the Academy | Apply for Mastery | Install the System
+
+Content Pillars:
+
+Systems | Market Truth | Mindset | Proof | Offer

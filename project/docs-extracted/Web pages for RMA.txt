@@ -1,0 +1,55 @@
+Project Brief: Website Architecture & Access Logic
+
+Please feel free to comment..
+
+1. The Public Facing Pages (The "Sizzle" & SEO Engine)
+
+Homepage: Elite aesthetic; high-conversion entry point for Tier 1 Lead Magnet.
+
+The "Proof of Production" (About) Page: Showcasing Marjorie & Bradley’s real-world stats and our WHY.
+
+The Case Study Gallery ("Wall of Proof"): Dynamic page for student results and video testimonials.
+
+The RMA Newsroom (Blog): SEO/AI-friendly feed for "Script of the Week" and market updates.
+
+Contact / 404 / Legal: Standard branded pages (404 must redirect to the Vault).
+
+2. The Sales Funnel (The "Conversion" Engine)
+
+Main Academy Sales Page: High-level overview of the 4-Tier ecosystem.
+
+Tier 2 & 3 Sales Pages: Long-form, conversion-optimized checkout paths.
+
+Tier 4 "Boardroom" Application: A custom form-based page (not a "Buy Now" button) to maintain exclusivity.
+
+Individual "Tripwire" Pages: Small sales pages for Tier 1 users to purchase individual script downloads.
+
+3. The Member Experience (The "Vault" & Dashboard)
+
+The Member Library (Main Dashboard): A "Netflix-style" hub showing all 4 Tiers. Owned Tiers are active; unowned Tiers are "greyed out" with a lock icon to encourage upgrades.
+
+The "Solution Kit" Search Portal: A mobile-optimized, lightning-fast search engine for scripts.
+
+Calculators & ROI Tools: Branded interactive tools for GCI tracking and business planning.
+
+Community Home Page: Segmented entry point for the tiered circles.
+
+Technical Directives: The "Gated Vault" Logic
+
+The "Vault" is our primary upsell engine. Access must be governed by the following Tier-specific logic:
+
+The "Lock" Philosophy: All members should be able to see the titles of all resources in the Search Portal. If a member clicks a resource they do not own, it must trigger a "Wait! Upgrade to Unlock" pop-up or redirect to the relevant Sales Page.
+
+Tier 1 (Public/Free): Access to the search results only. Every download is a "Pay-per-item" tripwire.
+
+Tier 2 (8-Month Course): Access to the Vault is Dripped. Assets unlock in the Vault only as the member progresses through the corresponding month of the course.
+
+Tier 3 (Growth): Immediate access to the vast majority of the script library and tools.
+
+Tier 4 (Boardroom): "God-Mode" access. Everything in the Vault and Library is 100% unlocked.
+
+Technical Requirement: AI & Mobile Readiness
+
+Mobile-First Design: Realtors must be able to pull up a script on their phone in <20 seconds while on a call.
+
+Schema Markup: Please ensure "Mobile-First Schema Markup" is applied to the Public Vault titles and Newsroom so our content is easily indexed by AI search engines (ChatGPT/Perplexity).
