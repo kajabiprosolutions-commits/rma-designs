@@ -1,0 +1,709 @@
+/* ============================================================
+   REALTOR MASTERY ACADEMY — Kajabi Theme
+   Brand Guide: Black #0c0c0c | Charcoal #212121
+                Blue #00447c | Teal #0b7b9e | Stone #eaeaea
+   Type: Montserrat 700/800 (display) × Inter 400/500/600 (body)
+   Engine: Kajabi Encore / Website 3.0
+   ============================================================ */
+
+/* ── 1. CSS Custom Properties ────────────────────────────── */
+:root {
+  --rma-ink:          #0c0c0c;
+  --rma-slate:        #212121;
+  --rma-ink-muted:    #5a5a5a;
+  --rma-blue:         #00447c;
+  --rma-blue-light:   #4FA3D1;
+  --rma-teal:         #0b7b9e;
+  --rma-teal-light:   #3FBADE;
+  --rma-bone:         #eaeaea;
+  --rma-stone:        #dcdace;
+  --rma-warm-white:   #f4f3ee;
+  --rma-white:        #ffffff;
+  --rma-grad:         linear-gradient(135deg, #00447c 0%, #0b7b9e 100%);
+  --rma-grad-light:   linear-gradient(135deg, #4FA3D1 0%, #3FBADE 100%);
+  --rma-display:      'Montserrat', 'Helvetica Neue', system-ui, sans-serif;
+  --rma-body:         'Inter', 'Helvetica Neue', system-ui, sans-serif;
+  --rma-mono:         'JetBrains Mono', ui-monospace, monospace;
+  --rma-radius:       2px;
+  --rma-ease:         cubic-bezier(.2,.7,.2,1);
+}
+
+/* ── 2. Global Base ──────────────────────────────────────── */
+body#encore-theme {
+  font-family: var(--rma-body) !important;
+  background-color: var(--rma-warm-white) !important;
+  color: var(--rma-ink) !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body#encore-theme *,
+body#encore-theme *::before,
+body#encore-theme *::after {
+  box-sizing: border-box;
+}
+
+/* ── 3. Typography ───────────────────────────────────────── */
+body#encore-theme h1,
+body#encore-theme h2,
+body#encore-theme h3,
+body#encore-theme h4,
+body#encore-theme h5,
+body#encore-theme h6,
+body#encore-theme .h1,
+body#encore-theme .h2,
+body#encore-theme .h3,
+body#encore-theme .h4 {
+  font-family: var(--rma-display) !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--rma-ink);
+}
+
+body#encore-theme h1 { font-size: clamp(36px, 5vw, 72px); font-weight: 800; letter-spacing: -0.03em; line-height: 0.98; }
+body#encore-theme h2 { font-size: clamp(28px, 3.6vw, 48px); font-weight: 700; letter-spacing: -0.025em; }
+body#encore-theme h3 { font-size: clamp(22px, 2.4vw, 32px); font-weight: 700; }
+body#encore-theme h4 { font-size: 20px; font-weight: 700; }
+body#encore-theme h5 { font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+body#encore-theme h6 { font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--rma-ink-muted); }
+
+body#encore-theme p { line-height: 1.65; color: var(--rma-ink); }
+body#encore-theme .lead, body#encore-theme .lede { font-size: 18px; line-height: 1.6; color: var(--rma-ink-muted); }
+
+body#encore-theme a {
+  color: var(--rma-blue);
+  text-decoration: none;
+  transition: color .2s var(--rma-ease);
+}
+body#encore-theme a:hover { color: var(--rma-teal); }
+
+/* ── 4. Buttons ──────────────────────────────────────────── */
+body#encore-theme .form-btn,
+body#encore-theme .btn,
+body#encore-theme .button,
+body#encore-theme [type="submit"],
+body#encore-theme .kjb-btn,
+body#encore-theme .cta-btn {
+  font-family: var(--rma-display) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  border-radius: var(--rma-radius) !important;
+  padding: 14px 24px !important;
+  transition: all .25s var(--rma-ease) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  cursor: pointer !important;
+  border: 1px solid transparent !important;
+  white-space: nowrap !important;
+}
+
+/* Primary button — ink fill */
+body#encore-theme .btn--primary,
+body#encore-theme .form-btn,
+body#encore-theme [type="submit"],
+body#encore-theme .button--primary {
+  background: var(--rma-ink) !important;
+  color: var(--rma-bone) !important;
+  border-color: var(--rma-ink) !important;
+}
+body#encore-theme .btn--primary:hover,
+body#encore-theme .form-btn:hover,
+body#encore-theme [type="submit"]:hover,
+body#encore-theme .button--primary:hover {
+  background: var(--rma-slate) !important;
+  transform: translateY(-1px);
+}
+
+/* Brand button — gradient (used for featured CTAs) */
+body#encore-theme .btn--brand,
+body#encore-theme .btn--accent,
+body#encore-theme .button--brand {
+  background: var(--rma-grad) !important;
+  color: var(--rma-warm-white) !important;
+  border: none !important;
+}
+body#encore-theme .btn--brand:hover,
+body#encore-theme .btn--accent:hover { filter: brightness(1.1); transform: translateY(-1px); }
+
+/* Secondary / outline */
+body#encore-theme .btn--secondary,
+body#encore-theme .button--secondary,
+body#encore-theme .btn--outline {
+  background: transparent !important;
+  color: var(--rma-ink) !important;
+  border-color: var(--rma-ink) !important;
+}
+body#encore-theme .btn--secondary:hover,
+body#encore-theme .button--secondary:hover,
+body#encore-theme .btn--outline:hover {
+  background: var(--rma-ink) !important;
+  color: var(--rma-bone) !important;
+}
+
+/* Button size overrides */
+body#encore-theme .btn--lg,
+body#encore-theme .btn--large { padding: 18px 32px !important; font-size: 13px !important; }
+body#encore-theme .btn--sm,
+body#encore-theme .btn--small { padding: 10px 16px !important; font-size: 11px !important; }
+body#encore-theme .btn--full,
+body#encore-theme .btn--block { width: 100% !important; }
+
+/* ── 5. Forms ────────────────────────────────────────────── */
+body#encore-theme .form-control,
+body#encore-theme .auth__field,
+body#encore-theme input[type="text"],
+body#encore-theme input[type="email"],
+body#encore-theme input[type="password"],
+body#encore-theme input[type="tel"],
+body#encore-theme input[type="number"],
+body#encore-theme textarea,
+body#encore-theme select {
+  font-family: var(--rma-body) !important;
+  font-size: 15px !important;
+  border: 1px solid var(--rma-stone) !important;
+  border-radius: var(--rma-radius) !important;
+  background: var(--rma-white) !important;
+  color: var(--rma-ink) !important;
+  padding: 12px 14px !important;
+  transition: border .2s var(--rma-ease) !important;
+  width: 100%;
+}
+body#encore-theme .form-control:focus,
+body#encore-theme .auth__field:focus,
+body#encore-theme input:focus,
+body#encore-theme textarea:focus,
+body#encore-theme select:focus {
+  outline: none !important;
+  border-color: var(--rma-blue) !important;
+  box-shadow: 0 0 0 3px rgba(0, 68, 124, 0.12) !important;
+}
+
+body#encore-theme .form-group { margin-bottom: 20px; }
+body#encore-theme .form-group label,
+body#encore-theme .auth__label {
+  font-family: var(--rma-display) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: var(--rma-ink-muted) !important;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* ── 6. Navigation / Header ──────────────────────────────── */
+body#encore-theme .header,
+body#encore-theme .site-header,
+body#encore-theme [data-section-type="header"] {
+  background: rgba(244, 243, 238, 0.96) !important;
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid var(--rma-stone) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 100 !important;
+}
+
+body#encore-theme .header__logo img,
+body#encore-theme .site-header__logo img,
+body#encore-theme .logo img {
+  height: 40px !important;
+  width: auto !important;
+}
+
+body#encore-theme .header__nav a,
+body#encore-theme .navigation__link,
+body#encore-theme .nav__link,
+body#encore-theme .header-navigation a {
+  font-family: var(--rma-display) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: var(--rma-ink) !important;
+  transition: color .2s !important;
+}
+body#encore-theme .header__nav a:hover,
+body#encore-theme .navigation__link:hover,
+body#encore-theme .nav__link:hover { color: var(--rma-blue) !important; }
+
+/* Dark header variant (member area) */
+body#encore-theme .header--dark,
+body#encore-theme .header--member {
+  background: rgba(12, 12, 12, 0.96) !important;
+  border-bottom-color: #2a2a2a !important;
+}
+body#encore-theme .header--dark a,
+body#encore-theme .header--member a { color: var(--rma-bone) !important; }
+
+/* ── 7. Auth Pages (Login / Register) ────────────────────── */
+body#encore-theme .auth__content {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 64px 40px;
+}
+body#encore-theme .auth__title {
+  font-family: var(--rma-display) !important;
+  font-weight: 800 !important;
+  font-size: 32px !important;
+  letter-spacing: -0.025em !important;
+  color: var(--rma-ink) !important;
+  margin-bottom: 32px !important;
+}
+body#encore-theme .auth__message {
+  border-radius: var(--rma-radius) !important;
+  font-size: 14px !important;
+  padding: 12px 16px !important;
+  border: 1px solid;
+}
+body#encore-theme .alert--danger {
+  background: rgba(140, 58, 58, 0.08) !important;
+  border-color: rgba(140, 58, 58, 0.3) !important;
+  color: #8C3A3A !important;
+}
+body#encore-theme .auth__link {
+  margin-top: 20px;
+  font-size: 13px;
+}
+body#encore-theme .auth__link a { color: var(--rma-blue) !important; }
+body#encore-theme .divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+  font-size: 12px;
+  color: var(--rma-ink-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+body#encore-theme .divider::before,
+body#encore-theme .divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--rma-stone);
+}
+
+/* ── 8. Cards & Products ─────────────────────────────────── */
+body#encore-theme .card,
+body#encore-theme .store-card,
+body#encore-theme .product-card,
+body#encore-theme .course-card,
+body#encore-theme .post-card {
+  border: 1px solid var(--rma-stone) !important;
+  border-radius: var(--rma-radius) !important;
+  background: var(--rma-white) !important;
+  transition: all .3s var(--rma-ease) !important;
+  overflow: hidden;
+}
+body#encore-theme .card:hover,
+body#encore-theme .store-card:hover,
+body#encore-theme .product-card:hover,
+body#encore-theme .course-card:hover {
+  border-color: var(--rma-ink) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 40px rgba(12,12,12,0.1) !important;
+}
+
+body#encore-theme .store-card__title,
+body#encore-theme .product-card__title,
+body#encore-theme .course-card__title {
+  font-family: var(--rma-display) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  color: var(--rma-ink) !important;
+}
+
+body#encore-theme .store-card__description,
+body#encore-theme .product-card__description {
+  font-size: 14px !important;
+  color: var(--rma-ink-muted) !important;
+  line-height: 1.6 !important;
+}
+
+body#encore-theme .store-card__price,
+body#encore-theme .product-card__price {
+  font-family: var(--rma-display) !important;
+  font-weight: 700 !important;
+  color: var(--rma-ink) !important;
+}
+
+/* Progress bars */
+body#encore-theme .progress,
+body#encore-theme .progress-bar-wrapper {
+  height: 3px !important;
+  background: var(--rma-stone) !important;
+  border-radius: 999px !important;
+}
+body#encore-theme .progress-bar,
+body#encore-theme .progress-fill {
+  background: var(--rma-grad) !important;
+  height: 100% !important;
+  border-radius: 999px !important;
+  transition: width .4s var(--rma-ease) !important;
+}
+
+/* ── 9. Course / Lecture Player ──────────────────────────── */
+body#encore-theme .lecture-view,
+body#encore-theme .lesson-view,
+body#encore-theme .course-content {
+  background: var(--rma-ink) !important;
+  color: var(--rma-bone) !important;
+}
+
+body#encore-theme .lecture-player,
+body#encore-theme .video-player-wrapper,
+body#encore-theme .player-container {
+  background: #000 !important;
+  border-radius: 0 !important;
+}
+
+body#encore-theme .lecture-title,
+body#encore-theme .lesson-title,
+body#encore-theme .kjb-lecture-title {
+  font-family: var(--rma-display) !important;
+  font-weight: 700 !important;
+  font-size: 24px !important;
+  letter-spacing: -0.02em !important;
+  color: var(--rma-bone) !important;
+}
+
+/* Course sidebar */
+body#encore-theme .course-sidebar,
+body#encore-theme .curriculum-sidebar,
+body#encore-theme .lecture-sidebar {
+  background: var(--rma-slate) !important;
+  border-left: 1px solid #2a2a2a !important;
+}
+
+body#encore-theme .course-sidebar__link,
+body#encore-theme .curriculum-sidebar a,
+body#encore-theme .lecture-nav a {
+  font-size: 13px !important;
+  color: rgba(234, 234, 234, 0.75) !important;
+  padding: 10px 16px !important;
+  display: block !important;
+  transition: color .2s, background .2s !important;
+  border-bottom: 1px solid rgba(42, 42, 42, 0.6) !important;
+}
+body#encore-theme .course-sidebar__link:hover,
+body#encore-theme .curriculum-sidebar a:hover {
+  color: var(--rma-bone) !important;
+  background: rgba(255,255,255,0.04) !important;
+}
+body#encore-theme .course-sidebar__link.active,
+body#encore-theme .curriculum-sidebar a.active,
+body#encore-theme .lecture-nav a.active {
+  color: var(--rma-teal-light) !important;
+  background: rgba(11, 123, 158, 0.12) !important;
+}
+
+/* Chapter / module headers */
+body#encore-theme .chapter-title,
+body#encore-theme .module-title,
+body#encore-theme .course-sidebar__chapter {
+  font-family: var(--rma-display) !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: var(--rma-teal-light) !important;
+  padding: 16px 16px 8px !important;
+}
+
+/* Mark complete */
+body#encore-theme .mark-complete-btn,
+body#encore-theme .kjb-mark-complete,
+body#encore-theme .complete-lesson-btn {
+  background: transparent !important;
+  border: 1px solid var(--rma-teal) !important;
+  color: var(--rma-teal-light) !important;
+  font-family: var(--rma-display) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  padding: 10px 20px !important;
+  border-radius: var(--rma-radius) !important;
+  transition: all .2s !important;
+}
+body#encore-theme .mark-complete-btn:hover { background: var(--rma-teal) !important; color: var(--rma-white) !important; }
+
+/* ── 10. Dashboard / Member Library ─────────────────────── */
+body#encore-theme .member-dashboard,
+body#encore-theme .library-view,
+body#encore-theme .products-grid-wrapper {
+  background: var(--rma-warm-white) !important;
+}
+
+body#encore-theme .products-grid,
+body#encore-theme .course-grid,
+body#encore-theme .library-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  gap: 24px !important;
+}
+
+body#encore-theme .percent-complete,
+body#encore-theme .completion-percent {
+  font-family: var(--rma-mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.1em !important;
+  color: var(--rma-ink-muted) !important;
+}
+
+/* ── 11. Sales Pages ─────────────────────────────────────── */
+body#encore-theme .sales-page {
+  background: var(--rma-warm-white) !important;
+}
+body#encore-theme .sales-page h1,
+body#encore-theme .sales-page .hero-title {
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+}
+body#encore-theme .price-display,
+body#encore-theme .offer-price,
+body#encore-theme .product-price {
+  font-family: var(--rma-display) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--rma-ink) !important;
+}
+body#encore-theme .price-note,
+body#encore-theme .billing-note {
+  font-size: 13px !important;
+  color: var(--rma-ink-muted) !important;
+}
+
+/* ── 12. Blog / Newsroom ─────────────────────────────────── */
+body#encore-theme .post-header,
+body#encore-theme .blog-post-header { margin-bottom: 48px; }
+body#encore-theme .post-title,
+body#encore-theme .blog-title {
+  font-family: var(--rma-display) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.05 !important;
+}
+body#encore-theme .post-meta,
+body#encore-theme .blog-meta {
+  font-family: var(--rma-mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.12em !important;
+  color: var(--rma-ink-muted) !important;
+  text-transform: uppercase !important;
+}
+body#encore-theme .post-body,
+body#encore-theme .blog-body {
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+  max-width: 72ch;
+}
+body#encore-theme .post-body p { margin-bottom: 24px; }
+body#encore-theme .post-body h2 { margin-top: 56px; margin-bottom: 20px; }
+body#encore-theme .post-body h3 { margin-top: 40px; margin-bottom: 16px; }
+
+/* Blog card */
+body#encore-theme .blog-card,
+body#encore-theme .post-card {
+  border: 1px solid var(--rma-stone) !important;
+  border-radius: var(--rma-radius) !important;
+}
+body#encore-theme .blog-card__category,
+body#encore-theme .post-card__category {
+  font-family: var(--rma-mono) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: var(--rma-blue) !important;
+}
+
+/* ── 13. Announcement Banner ─────────────────────────────── */
+body#encore-theme .announcement {
+  border-radius: var(--rma-radius) !important;
+  border: 1px solid var(--rma-stone) !important;
+  padding: 24px !important;
+}
+body#encore-theme .announcement__title {
+  font-family: var(--rma-display) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+body#encore-theme .announcement__link {
+  font-family: var(--rma-display) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--rma-blue) !important;
+}
+
+/* ── 14. Footer ──────────────────────────────────────────── */
+body#encore-theme .footer,
+body#encore-theme .site-footer,
+body#encore-theme [data-section-type="footer"] {
+  background: var(--rma-ink) !important;
+  color: var(--rma-bone) !important;
+  padding: 80px 0 32px !important;
+  border-top: none !important;
+}
+body#encore-theme .footer a,
+body#encore-theme .site-footer a {
+  color: rgba(234, 234, 234, 0.65) !important;
+  font-size: 14px !important;
+  transition: color .2s !important;
+}
+body#encore-theme .footer a:hover,
+body#encore-theme .site-footer a:hover { color: var(--rma-bone) !important; }
+body#encore-theme .footer h5,
+body#encore-theme .site-footer h5 {
+  color: var(--rma-teal-light) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.2em !important;
+  margin-bottom: 20px !important;
+}
+body#encore-theme .footer p,
+body#encore-theme .site-footer p { color: rgba(234, 234, 234, 0.55) !important; font-size: 13px !important; }
+body#encore-theme .footer hr,
+body#encore-theme .site-footer hr {
+  border-color: rgba(234, 234, 234, 0.1) !important;
+  margin: 32px 0 !important;
+}
+body#encore-theme .footer-legal,
+body#encore-theme .footer__copyright {
+  font-family: var(--rma-mono) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.08em !important;
+  color: rgba(234, 234, 234, 0.4) !important;
+}
+
+/* ── 15. Checkout ────────────────────────────────────────── */
+body#encore-theme .checkout,
+body#encore-theme .purchase-form,
+body#encore-theme .checkout-container {
+  background: var(--rma-warm-white) !important;
+}
+body#encore-theme .checkout__summary,
+body#encore-theme .order-summary {
+  background: var(--rma-white) !important;
+  border: 1px solid var(--rma-stone) !important;
+  border-radius: var(--rma-radius) !important;
+  padding: 32px !important;
+}
+body#encore-theme .checkout__product-name {
+  font-family: var(--rma-display) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* ── 16. Kajabi Color Scheme Overrides ───────────────────── */
+/* Dark / ink surfaces */
+body#encore-theme .background-dark,
+body#encore-theme .section--dark,
+body#encore-theme .color-scheme-dark {
+  background-color: var(--rma-ink) !important;
+  color: var(--rma-bone) !important;
+}
+body#encore-theme .background-dark h1,
+body#encore-theme .background-dark h2,
+body#encore-theme .background-dark h3,
+body#encore-theme .background-dark h4,
+body#encore-theme .section--dark h1,
+body#encore-theme .section--dark h2 {
+  color: var(--rma-bone) !important;
+}
+body#encore-theme .background-dark p,
+body#encore-theme .section--dark p { color: rgba(234,234,234,0.75) !important; }
+body#encore-theme .background-dark a,
+body#encore-theme .section--dark a { color: var(--rma-teal-light) !important; }
+
+/* Light / warm surfaces */
+body#encore-theme .background-light,
+body#encore-theme .section--light,
+body#encore-theme .color-scheme-light {
+  background-color: var(--rma-warm-white) !important;
+  color: var(--rma-ink) !important;
+}
+
+/* White */
+body#encore-theme .background-white,
+body#encore-theme .color-scheme-white { background-color: var(--rma-white) !important; }
+
+/* Brand / accent */
+body#encore-theme .background-brand,
+body#encore-theme .background-accent,
+body#encore-theme .color-scheme-brand {
+  background: var(--rma-grad) !important;
+  color: var(--rma-warm-white) !important;
+}
+
+/* ── 17. Layout Utilities ────────────────────────────────── */
+body#encore-theme .container,
+body#encore-theme .sizer .container { max-width: 1240px; }
+
+body#encore-theme .section,
+body#encore-theme [data-section] { padding: 80px 0; }
+
+body#encore-theme .hairline { height: 1px; background: var(--rma-stone); width: 100%; }
+
+/* Eyebrow / overline labels */
+body#encore-theme .eyebrow,
+body#encore-theme .overline,
+body#encore-theme .label {
+  font-family: var(--rma-display) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: var(--rma-blue) !important;
+}
+
+/* ── 18. Alerts & Badges ─────────────────────────────────── */
+body#encore-theme .badge,
+body#encore-theme .tag {
+  font-family: var(--rma-mono) !important;
+  font-size: 10px !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  border-radius: 100px !important;
+  padding: 4px 10px !important;
+  border: 1px solid var(--rma-stone) !important;
+  color: var(--rma-ink-muted) !important;
+}
+body#encore-theme .badge--brand { border-color: var(--rma-blue); color: var(--rma-blue); }
+body#encore-theme .badge--success { border-color: #4A6B5A; color: #4A6B5A; }
+
+/* ── 19. Dividers / HR ───────────────────────────────────── */
+body#encore-theme hr {
+  border: none !important;
+  border-top: 1px solid var(--rma-stone) !important;
+  margin: 40px 0 !important;
+}
+
+/* ── 20. Scrollbar (webkit) ──────────────────────────────── */
+body#encore-theme ::-webkit-scrollbar { width: 6px; height: 6px; }
+body#encore-theme ::-webkit-scrollbar-track { background: transparent; }
+body#encore-theme ::-webkit-scrollbar-thumb {
+  background: var(--rma-stone);
+  border-radius: 3px;
+}
+body#encore-theme ::-webkit-scrollbar-thumb:hover { background: var(--rma-ink-muted); }
+
+/* ── 21. Responsive ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  body#encore-theme .section { padding: 56px 0; }
+  body#encore-theme h1 { font-size: clamp(28px, 8vw, 48px); }
+  body#encore-theme h2 { font-size: clamp(24px, 6vw, 36px); }
+  body#encore-theme .auth__content { padding: 40px 24px; }
+}
+
+/* ── 22. Selection Color ─────────────────────────────────── */
+body#encore-theme ::selection {
+  background: rgba(0, 68, 124, 0.15);
+  color: var(--rma-ink);
+}

@@ -1,0 +1,93 @@
+/* ============================================================
+   RMA Kajabi Overrides
+   Targets Kajabi's built-in UI layer (Encore engine internals)
+   that rma-brand.css may not reach via generic selectors.
+   ============================================================ */
+
+/* Force RMA font stack on Kajabi's own UI widgets */
+.kjb-,
+.kjb- *,
+[class*="kjb-"] {
+  font-family: 'Inter', 'Helvetica Neue', system-ui, sans-serif !important;
+}
+[class*="kjb-"] h1,
+[class*="kjb-"] h2,
+[class*="kjb-"] h3,
+[class*="kjb-"] h4 {
+  font-family: 'Montserrat', 'Helvetica Neue', system-ui, sans-serif !important;
+}
+
+/* Kajabi checkout embed */
+.embedded-checkout iframe {
+  border: 1px solid #dcdace !important;
+  border-radius: 2px !important;
+}
+
+/* Kajabi community widgets */
+.community-feed-wrapper,
+.community-post,
+.community-reply {
+  font-family: 'Inter', sans-serif !important;
+  border-color: #dcdace !important;
+}
+.community-post__author-name {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* Kajabi assessment blocks */
+.block-assessment .answer-option {
+  border: 1px solid #dcdace !important;
+  border-radius: 2px !important;
+  font-family: 'Inter', sans-serif !important;
+  transition: border-color .2s !important;
+}
+.block-assessment .answer-option:hover { border-color: #00447c !important; }
+.block-assessment .answer-option.selected { border-color: #0b7b9e !important; background: rgba(11,123,158,0.06) !important; }
+
+/* Kajabi countdown timer */
+.countdown__timer { font-family: 'JetBrains Mono', monospace !important; }
+.countdown__label { font-family: 'Montserrat', sans-serif !important; font-size: 10px !important; letter-spacing: 0.2em !important; text-transform: uppercase !important; }
+
+/* Video play button */
+.video-play-btn,
+.play-button {
+  background: linear-gradient(135deg, #00447c 0%, #0b7b9e 100%) !important;
+  border: none !important;
+  border-radius: 50% !important;
+}
+
+/* Kajabi notification toast */
+.kjb-notification,
+.flash-message {
+  font-family: 'Inter', sans-serif !important;
+  border-radius: 2px !important;
+  border-left: 3px solid #00447c !important;
+}
+
+/* Loading / wait state */
+.waiting-loader { color: #0b7b9e !important; }
+
+/* Search */
+.member-search input,
+.sidebar-search input {
+  font-family: 'Inter', sans-serif !important;
+  border: 1px solid #dcdace !important;
+  border-radius: 2px !important;
+}
+.member-search input:focus,
+.sidebar-search input:focus {
+  outline: none !important;
+  border-color: #00447c !important;
+  box-shadow: 0 0 0 3px rgba(0,68,124,0.1) !important;
+}
+
+/* Social share buttons */
+.social-share-btn { border-radius: 2px !important; }
+
+/* CTA popup overlay */
+.cta-popup-overlay { background: rgba(12,12,12,0.85) !important; backdrop-filter: blur(8px); }
+.cta-popup {
+  border-radius: 2px !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+}

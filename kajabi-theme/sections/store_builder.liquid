@@ -1,0 +1,274 @@
+{% if section.blocks.size > 0 %}
+  {% include "section_styles" %}
+  <div kjb-settings-id="{{ 'background_color' | settings_id: section: section }}"
+    class="section background-{{ section.settings.background_color | color_scheme_class }}">
+    <div class="sizer">
+      <div class="container">
+        <div class="row align-items-{{ section.settings.vertical }} justify-content-{{ section.settings.horizontal }}">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'section_heading' %}
+                {% include "offers_heading" %}
+              {% when 'offer_card' %}
+                {% include "offer_card" %}
+              {% when 'custom_card' %}
+                {% include "custom_card" %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Store Builder",
+    "blocks": [
+      {
+        "type": "section_heading",
+        "name": "Section Heading",
+        "elements": [
+          {
+            "type": "header",
+            "content": "Section heading"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Section title"
+          },
+          {
+            "type": "color",
+            "label": "Text",
+            "id": "text_color",
+            "allow_blank": true
+          },
+          {
+            "type": "header",
+            "content": "Block appearance",
+            "style": "subheading"
+          },
+          {
+            "type": "align",
+            "id": "alignment",
+            "label": "Text alignment",
+            "default": "left",
+            "direction": "horizontal"
+          }
+        ]
+      },
+      {
+        "type": "offer_card",
+        "name": "Offer Card",
+        "elements": [
+          {
+            "type": "header",
+            "content": "Offer card"
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "offer",
+            "id": "offer_id",
+            "label": "Offer"
+          },
+          {
+            "type": "checkbox",
+            "id": "link_target",
+            "label": "Open new window",
+            "default": "false"
+          },
+          {
+            "type": "header",
+            "content": "Block Appearance",
+            "style": "subheading"
+          },
+          {
+            "type": "color",
+            "label": "Text",
+            "id": "text_color",
+            "allow_blank": true
+          },
+          {
+            "type": "color",
+            "label": "Background",
+            "id": "background_color",
+            "allow_blank": true,
+            "default": "#FFFFFF"
+          }
+        ]
+      },
+      {
+        "type": "custom_card",
+        "name": "Custom Card",
+        "elements": [
+          {
+            "type": "header",
+            "content": "Custom card"
+          },
+          {
+            "type": "action",
+            "id": "card_action",
+            "label": "Card Action",
+            "anchor": true,
+            "two_step": true,
+            "default": "http://www.kajabi.com"
+          },
+          {
+            "type": "checkbox",
+            "id": "link_target",
+            "label": "Open new window",
+            "default": "false"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "fit": "crop",
+            "width": 1280,
+            "height": 720,
+            "info": "Suggested dimensions: 1280 x 720"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title Goes Here"
+          },
+          {
+            "type": "textarea",
+            "label": "Description",
+            "id": "description",
+            "default": "Lorem ipsum dolor sit amet, do bibendum iaculis, sodales sit aenean. Posuere fermentum eleifend placerat, euismod nulla interdum, id corporis nam turpis, ipsum nibh integer nunc nam urna, ligula sit nec consequat."
+          },
+          {
+            "type": "text",
+            "id": "price",
+            "label": "Price",
+            "default": "$9.99"
+          },
+          {
+            "type": "header",
+            "content": "Block appearance",
+            "style": "subheading"
+          },
+          {
+            "type": "color",
+            "label": "Text",
+            "id": "text_color",
+            "allow_blank": true
+          },
+          {
+            "type": "color",
+            "label": "Background",
+            "id": "background_color",
+            "allow_blank": true,
+            "default": "#FFFFFF"
+          }
+        ]
+      }
+    ],
+    "elements": [
+      {
+        "type": "color",
+        "label": "Text",
+        "id": "text_color",
+        "allow_blank": true
+      },
+      {
+        "type": "color",
+        "label": "Background",
+        "id": "background_color",
+        "default": "#dfdfdd",
+        "allow_blank": true
+      },
+      {
+        "type": "align",
+        "id": "alignment",
+        "label": "Text alignment",
+        "default": "left"
+      }
+    ],
+    "groups": [
+      {
+        "name": "Desktop layout",
+        "elements": [
+          {
+            "type": "spacer",
+            "id": "padding_desktop",
+            "label": "Section padding",
+            "placeholder": {
+              "top": "100",
+              "right": "40",
+              "bottom": "100",
+              "left": "40"
+            }
+          },
+          {
+            "type": "align",
+            "id": "vertical",
+            "label": "Vertical alignment",
+            "default": "top",
+            "direction": "vertical"
+          },
+          {
+            "type": "select",
+            "id": "horizontal",
+            "label": "Horizontal alignment",
+            "default": "left",
+            "options": [
+              {
+                "value": "left",
+                "label": "Left"
+              },
+              {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+              },
+              {
+                "value": "between",
+                "label": "Space Between"
+              },
+              {
+                "value": "around",
+                "label": "Space Around"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "equal_height",
+            "label": "Equal height blocks",
+            "default": "false"
+          }
+        ]
+      },
+      {
+        "name": "Mobile layout",
+        "elements": [
+          {
+            "type": "spacer",
+            "id": "padding_mobile",
+            "label": "Section padding",
+            "placeholder": {
+              "top": "40",
+              "right": "10",
+              "bottom": "40",
+              "left": "10"
+            }
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
